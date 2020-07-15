@@ -1,0 +1,135 @@
+[debug] [2020-05-08T20:41:05.467Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T20:41:05.470Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-05-08T20:41:05.470Z] CLI Version:   8.0.2
+[debug] [2020-05-08T20:41:05.470Z] Platform:      win32
+[debug] [2020-05-08T20:41:05.470Z] Node Version:  v12.16.3
+[debug] [2020-05-08T20:41:05.472Z] Time:          Fri May 08 2020 15:41:05 GMT-0500 (GMT-05:00)
+[debug] [2020-05-08T20:41:05.472Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T20:41:05.473Z] 
+[debug] [2020-05-08T20:41:05.485Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T20:41:05.487Z] > authorizing via signed-in user
+[debug] [2020-05-08T20:41:05.487Z] [iam] checking project yourdriverv0-0-1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-05-08T20:41:05.494Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/yourdriverv0-0-1:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-05-08T20:41:06.689Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 20:41:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=494","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T20:41:06.693Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project yourdriverv0-0-1:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2020-05-08T20:41:06.695Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/yourdriverv0-0-1  
+ 
+[debug] [2020-05-08T20:41:07.914Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 08 May 2020 20:41:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T20:41:07.914Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-05-08T20:41:07.917Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-05-08T20:41:09.009Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:40:35)
+    at Request.self.callback (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:416:28)
+    at IncomingMessage.emit (events.js:322:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project yourdriverv0-0-1. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-05-08T20:41:13.411Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T20:41:13.414Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-05-08T20:41:13.414Z] CLI Version:   8.0.2
+[debug] [2020-05-08T20:41:13.415Z] Platform:      win32
+[debug] [2020-05-08T20:41:13.415Z] Node Version:  v12.16.3
+[debug] [2020-05-08T20:41:13.417Z] Time:          Fri May 08 2020 15:41:13 GMT-0500 (GMT-05:00)
+[debug] [2020-05-08T20:41:13.417Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T20:41:13.417Z] 
+[debug] [2020-05-08T20:41:13.434Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T20:41:13.436Z] > authorizing via signed-in user
+[debug] [2020-05-08T20:41:13.436Z] [iam] checking project yourdriverv0-0-1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-05-08T20:41:13.444Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/yourdriverv0-0-1:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-05-08T20:41:14.503Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 20:41:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=513","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T20:41:14.506Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project yourdriverv0-0-1:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2020-05-08T20:41:14.507Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/yourdriverv0-0-1  
+ 
+[debug] [2020-05-08T20:41:15.392Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 08 May 2020 20:41:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T20:41:15.393Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-05-08T20:41:15.397Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-05-08T20:41:15.949Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:40:35)
+    at Request.self.callback (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:416:28)
+    at IncomingMessage.emit (events.js:322:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project yourdriverv0-0-1. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-05-08T20:41:32.370Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T20:41:32.373Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-05-08T20:41:32.373Z] CLI Version:   8.0.2
+[debug] [2020-05-08T20:41:32.373Z] Platform:      win32
+[debug] [2020-05-08T20:41:32.373Z] Node Version:  v12.16.3
+[debug] [2020-05-08T20:41:32.375Z] Time:          Fri May 08 2020 15:41:32 GMT-0500 (GMT-05:00)
+[debug] [2020-05-08T20:41:32.375Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T20:41:32.375Z] 
+[debug] [2020-05-08T20:41:32.386Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T20:41:32.387Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\julia\OneDrive\Documentos\GitHub\YourDriver
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using YourDriver.
+[debug] [2020-05-08T20:41:40.084Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/YourDriver  
+ 
+[debug] [2020-05-08T20:41:42.743Z] <<< HTTP RESPONSE 400 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 08 May 2020 20:41:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T20:41:42.744Z] <<< HTTP RESPONSE BODY {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2020-05-08T20:41:42.749Z] HTTP Error: 400, Request contains an invalid argument.
+[debug] [2020-05-08T20:41:43.454Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at module.exports (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:40:35)
+    at Request.self.callback (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\julia\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:416:28)
+    at IncomingMessage.emit (events.js:322:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project YourDriver. Please make sure the project exists and your account has permission to access it.
